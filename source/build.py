@@ -160,7 +160,7 @@ def head(title, description, path, image="/brand/og.jpg", kind="website", extra_
         '<meta property="og:image:width" content="1200">',
         '<meta property="og:image:height" content="630">',
         '<meta name="twitter:card" content="summary_large_image">',
-        '<meta name="twitter:site" content="@toudotgg">',
+        '<meta name="twitter:site" content="@ferrasium">',
         '<link rel="icon" href="/favicon.ico" sizes="32x32">',
         '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
         '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
@@ -179,7 +179,7 @@ PERSON = {
     "jobTitle": "Product engineer", "email": "mailto:polatovmaqsudjon1@gmail.com",
     "address": {"@type": "PostalAddress", "addressLocality": "Tashkent", "addressCountry": "UZ"},
     "sameAs": ["https://github.com/maqsudjon-cell", "https://huggingface.co/Maqsudjonpolatov",
-               "https://x.com/toudotgg", "https://instagram.com/toudotgg", "https://t.me/toudotgg",
+               "https://x.com/ferrasium", "https://www.instagram.com/ferrasiums", "https://t.me/ferrasium",
                "https://maqsudjon.com/"],
 }
 
@@ -205,7 +205,7 @@ def topbar():
 
 def footer():
     return ('<footer class="foot wrap"><span>© 2026 Maqsudjon Polatov · tou = to you, gg = given gladly</span>'
-            '<span><a href="/log/">All notes</a> · <a href="/rss.xml">RSS</a> · <a href="https://t.me/toudotgg">Telegram</a></span></footer>')
+            '<span><a href="/log/">All notes</a> · <a href="/rss.xml">RSS</a> · <a href="https://t.me/ferrasium">Telegram</a></span></footer>')
 
 
 def card(n):
@@ -416,7 +416,7 @@ def main():
             write(out, "llms.txt", "# tou.gg\n\n> Maqsudjon Polatov, product engineer in Tashkent. Welds metal by day, ships software by night.\n\n"
                   "## Pages\n\n- [Home](https://tou.gg/)\n- [CV](https://tou.gg/cv/)\n- [Notes](https://tou.gg/log/)\n- [RSS](https://tou.gg/rss.xml)\n\n## Products\n\n- [Ferra AI Agents](https://tou.gg/ferra/): A personal AI-agent app for iPhone built by Maqsudjon Polatov. Each agent has one focused task, its own OpenRouter model and separate chats, with optional encrypted BYOK and approval before external actions. [Product facts, pricing and current availability](https://tou.gg/ferra/llms.txt).\n\n## Notes\n\n"
                   + "\n".join(f"- [{n['title']}]({SITE}/{n['path']}): {n['description']}" for n in notes_order) + "\n")
-            write(out, "humans.txt", "/* TEAM */\nMaqsudjon Polatov, Tashkent. Product engineer and metal fabricator.\nContact: polatovmaqsudjon1@gmail.com · t.me/toudotgg\n")
+            write(out, "humans.txt", "/* TEAM */\nMaqsudjon Polatov, Tashkent. Product engineer and metal fabricator.\nContact: polatovmaqsudjon1@gmail.com · t.me/ferrasium\n")
             write(out, "404.html", document(head("Not found · tou.gg", "This page does not exist.", "404.html"),
                   f'<style>{ARTICLE_CSS}</style>{topbar()}<main class="wrap"><section class="index-head"><p class="eyebrow">404</p>'
                   '<h1>Nothing welded here.</h1><p class="lede">This page does not exist, or it moved when the site was rebuilt.</p>'
